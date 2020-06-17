@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+}
+
+.content{
+    padding: 3rem 0;
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+.image-bg img {
+    width: 70%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1rem 0;
+}
+
+input{
+    border: 1px solid #062863;
+box-sizing: border-box;
+border-radius: 10px 10px 10px 0px;
+padding: 1rem;
+}
+
+select{
+    border: 1px solid #062863;
+box-sizing: border-box;
+border-radius: 10px 10px 10px 0px;
+padding: 1rem;
+width: 100%;
+}
+
+option{
+    color: #e4e4e4;
+}
+
+@media(min-width:700px){
+    main{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .content{
+        width: 100%;
+    }
+}
