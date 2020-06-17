@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Piggyvest | Flex-Interest Calculator</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dwaem4pvx/image/upload/v1586221251/piggy_little_icon_jcb4jh.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dwaem4pvx/image/upload/v1586043563/piggyvest-logo.0b78a8fa_seeoer.svg" alt="Piggybank Logo" class="img" /></a>
+    <div class="side-bar">
+        <p><a href="#">Home</a></p>
+        <p><a href="#">Savings</a></p>
+        <p><a href="#">Invest</a></p>
+        <p><a href="#">Account</a></p>
+        <div id="logout">
+        <p><a href="#">Logout</a></p>
+        </div>
+    </div>
+    <div class="card-cont">
+        <form class="SI-form">
+            <div class="input-fields">
+                <p>Amount</p><input type="text" name="prin" placeholder="Principlal">
+            </div>
+            <div>
+                <p>Rate</p><input type="text" name="rate" placeholder="Interest Rate">
+            </div>
+            <div>
+                <p>Time</p><input type="text" name="time" placeholder="Time">
+            </div>
+            <div>
+                <p>Interest</p><input type="text" name="simp">
+            </div>
+            <div id="button">
+                <input type="button" name="btn" value="Interest" onclick="calc(this.form)">
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        var p,r,t,si;
+    function calc(f){
+        p=parseInt(f.prin.value);
+        r=parseInt(f.rate.value);
+        t=parseInt(f.time.value);
+        si=(p*r*t)/100;
+        f.simp.value=si;
+}
+    </script>
+</body>
+</html>

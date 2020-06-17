@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.sideBar{
+    background: #062863;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*p a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+p a:hover{
+    background-color: #C9D439;
+    transition: 3s ease;
+    
+}*/
