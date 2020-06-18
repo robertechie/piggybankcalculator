@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/piggy.css">
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="site-navbar">
+                            <img src="img/piggy.png" alt="" class="logo">
+                            <input type="checkbox" name="" id="chk">
+                            <label for="chk" class="show-menu-btn">
+                                <i class="fa fa-navicon"></i>
+                            </label>
+                            <ul class="menu" style="list-style-type: none;">
+                                <li><a href="#" class="navbar-link">About</a></li>
+                                <li><a href="#" class="navbar-link">Stories</a></li>
+                                <li><a href="#" class="navbar-link">FAQ</a></li>
+                                <li><a href="#" class="navbar-link">Blog</a></li>
+                                <li><a href="#" class="navbar-link">Login</a></li>
+                                <li><a href="#" class="navbar-link">Create Account</a></li>
+                                <label for="chk" class="hide-menu-btn">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="form-container">
+                        <form action="">
+                            <h2>calculate <br> your interest</h2>
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="col-md-5">
+                                        <div class="form-field">
+                                            <label for="amount">How much do you want to save?</label>
+                                            <input style="color:black" type="text" name="amountTo" id="amountTo">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-"></div> -->
+                                    <div class="col-md-5">
+                                        <div class="form-field">
+                                            <label for="amount">Package</label>
+                                            <select name="" id="">
+                                                <option value="">PiggyBank 10% per annum</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-field">
+
+                                            <div class="form-field">
+                                                <label for="amount">Select Date Duration?</label>
+                                                <input style="color:black" type="date" name="daysNum" id="days">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-field">
+                                            <input class="output" style="color:#fff" type="button" name="btn"
+                                                value="Calculate Interest" onclick="calc(this.form)">
+                                        </div>
+
+                                        <div class="form-field"
+                                            style="background-color:#062873; color:#fff; padding:1rem; border-radius:5px">
+                                            Expected Daily Amount: <span style="font-weight:bold"
+                                                id="daily">0.00</span><br>
+                                            Expected Month Amount: <span style="font-weight:bold"
+                                                id="monthly">0.00</span><br>
+                                            Expected Total Amount: <span style="font-weight:bold"
+                                                id="exp">0.00</span><br>
+                                            Due Date: <span style="font-weight:bold" id="dd"></span><br>
+                                        </div>
+                                    </div>
+                            </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
