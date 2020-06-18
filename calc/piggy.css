@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav{
+    color: #083E9E;
+}
+
+nav li{
+    padding: 15px;
+}
+
+.container{
+    margin-top: 6%;
+}
+
+.text{
+    color: #083E9E;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.text1{
+    padding-right: 40px;
+}
+
+.text button{
+    width: 200px;
+    text-align: left;
+}
+
+
